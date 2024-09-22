@@ -1,4 +1,4 @@
-**react-re-struct** is designed to efficiently manage mutable data structures with explicit control over re-renders.
+**react-use-re-struct** is designed to efficiently manage mutable data structures with explicit control over re-renders.
 Built for performance, it allows you to work with complex data structures (like linked lists, stacks, trees, and more) in a React-friendly way while maintaining full control over when components re-render.
 
 ### Features:

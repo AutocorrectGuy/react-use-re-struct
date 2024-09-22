@@ -1,4 +1,4 @@
-**react-use-restruct** is designed to efficiently manage mutable data structures with explicit control over re-renders.
+**react-userestruct** is designed to efficiently manage mutable data structures with explicit control over re-renders.
 Built for performance, it allows you to work with complex data structures (like linked lists, stacks, trees, and more) in a React-friendly way while maintaining full control over when components re-render.
 
 ### Features:
@@ -29,36 +29,14 @@ export class LinkedListNode<T> {
   }
 }
 
-export default class MyLinkedList<T extends string> {
+export default class MyLinkedList<T> {
   public head: LinkedListNode<T> | null = null
   public tail: LinkedListNode<T> | null = null
 
-  // Push a new node to the end of the list
   public push(value: T) {
     const newNode = new LinkedListNode(value)
-
-    if (!this.head) {
-      // If list is empty, set head and tail to the new node
-      this.head = newNode
-      this.tail = newNode
-    } else {
-      // Otherwise, append the new node to the end and update the tail
-      this.tail!.next = newNode
-      this.tail = newNode
-    }
-  }
-
-  // Convert the list to an array
-  public toArray(): T[] {
-    const result: T[] = []
-    let current = this.head
-
-    while (current) {
-      result.push(current.value)
-      current = current.next
-    }
-
-    return result
+    !this.head || !this.tail ? (this.head = newNode) : (this.tail!.next = newNode)
+    this.tail = newNode
   }
 }
 ```

@@ -1,0 +1,10 @@
+.gitignore
+
+# Exclude development files and directories
+src/
+node_modules/
+
+# Exclude configuration and miscellaneous files
+.gitignore
+tsconfig.json
+package-lock.json

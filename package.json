@@ -1,0 +1,29 @@
+{
+  "main": "dist/useReStruct.js",
+  "types": "dist/useReStruct.d.ts",
+  "files": [
+    "dist"
+  ],
+  "name": "use-restruct",
+  "version": "1.0.0",
+  "description": "A hook to make data structures rerenderable in React",
+  "keywords": [
+    "react",
+    "hook",
+    "data-structure",
+    "rerender"
+  ],
+  "author": "Martins Sturainis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AutocorrectGuy/react-re-struct.git"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.8",
+    "typescript": "^5.6.2"
+  }
+}

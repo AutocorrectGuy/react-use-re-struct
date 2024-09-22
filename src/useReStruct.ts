@@ -4,7 +4,7 @@ type ReactRerenderableDataStructure<T> = {
   [K in keyof T]: T[K] extends (...args: infer A) => infer R ? (shouldRerender: boolean, ...args: A) => R : T[K]
 }
 
-export const useReStruct = <T extends object>(dataStructure: T): ReactRerenderableDataStructure<T> => {
+export const useRestruct = <T extends object>(dataStructure: T): ReactRerenderableDataStructure<T> => {
   const [_, setRerender] = useState<boolean>(false)
   const ref = useRef<T>(dataStructure)
   return new Proxy(ref.current, {

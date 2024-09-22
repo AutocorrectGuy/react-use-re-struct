@@ -1,10 +1,10 @@
 {
-  "main": "dist/useReStruct.js",
-  "types": "dist/useReStruct.d.ts",
+  "main": "dist/useRestruct.js",
+  "types": "dist/useRestruct.d.ts",
   "files": [
     "dist"
   ],
-  "name": "react-use-re-struct",
+  "name": "react-use-restruct",
   "version": "1.0.0",
   "description": "A hook to make data structures rerenderable in React",
   "keywords": [

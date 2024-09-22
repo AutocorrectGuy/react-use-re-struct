@@ -4,7 +4,7 @@
   "files": [
     "dist"
   ],
-  "name": "react-use-restruct",
+  "name": "react-userestruct",
   "version": "1.0.0",
   "description": "A hook to make data structures rerenderable in React",
   "keywords": [

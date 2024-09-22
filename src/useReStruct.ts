@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 
-type ReactRerenderableDataStructure<T> = {
+export type ReactRerenderableDataStructure<T> = {
   [K in keyof T]: T[K] extends (...args: infer A) => infer R ? (shouldRerender: boolean, ...args: A) => R : T[K]
 }
 

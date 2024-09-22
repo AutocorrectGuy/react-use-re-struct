@@ -51,7 +51,7 @@ import MyLinkedList from './MyLinkedList'
 
 // Example: Using a LinkedList in a React component
 const App = () => {
-  const linkedList = useRestruct<MyLinkedList<string>>(new LinkedList())
+  const list = useRestruct<MyLinkedList<string>>(new LinkedList())
 
   const handleAddDuplicate = () => {
     list.append(false, 'new item') // Append withhout rerender trigger

@@ -5,7 +5,7 @@
     "dist"
   ],
   "name": "react-userestruct",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A hook to make data structures rerenderable in React",
   "keywords": [
     "react",

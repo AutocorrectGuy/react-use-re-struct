@@ -33,7 +33,7 @@ export default class MyLinkedList<T> {
   public head: LinkedListNode<T> | null = null
   public tail: LinkedListNode<T> | null = null
 
-  public push(value: T) {
+  public append(value: T) {
     const newNode = new LinkedListNode(value)
     !this.head || !this.tail ? (this.head = newNode) : (this.tail!.next = newNode)
     this.tail = newNode
